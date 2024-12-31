@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="author" content="geomydas" />
+
+    <meta name="title" content="Frontend Mentor | Conference ticket generator" />
+    <meta
+      name="description"
+      content="A solution to the 'Conference ticket generator' challenge on frontendmentor.io. Made by @geomydas on GitHub"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://geomydas.github.io/FEMConferenceTicket/dist/"
+    />
+    <meta property="og:title" content="Frontend Mentor | Conference ticket generator" />
+    <meta
+      property="og:description"
+      content="A solution to the 'Conference ticket generator' challenge on frontendmentor.io. Made by @geomydas on GitHub"
+    />
+    <meta
+      property="og:image"
+      content="https://geomydas.github.io/FEMConferenceTicket/images/favicon-32x32.png"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://geomydas.github.io/FEMConferenceTicket/dist/"
+    />
+    <meta
+      property="twitter:title"
+      content="Frontend Mentor | Conference ticket generator"
+    />
+    <meta
+      property="twitter:description"
+      content="A solution to the 'Conference ticket generator' challenge on frontendmentor.io. Made by @geomydas on GitHub"
+    />
+    <meta
+      property="twitter:image"
+      content="https://geomydas.github.io/FEMConferenceTicket/images/favicon-32x32.png"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./output.css" />
+    <style></style>
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Conference ticket generator</title>
+  </head>
+  <body>
+    <header>
+      <a href="#"><img src="../images/logo-full.svg" alt="Coding Conf" /></a>
+    </header>
+
+    <main>
+      <section>
+        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+        <form action="" method="post" novalidate data-js="form">
+          <label for="">Upload Avatar</label>
+          <input type="file" />
+          Drag and drop or click to upload Upload your photo (JPG or PNG, max size:
+          500KB).
+          <div>
+            <label for="full-name">Full Name</label>
+            <input
+              id="full-name"
+              type="name"
+              name="full-name"
+              required
+              aria-required="true"
+              aria-invalid="false"
+              autocomplete=""
+              data-js="full-name"
+            />
+          </div>
+          <label for="email-address">Email Address</label>
+          <input
+            id="email-address"
+            type="email"
+            name="email-address"
+            required
+            aria-required="true"
+            aria-invalid="false"
+            autocomplete=""
+            data-js="email-address"
+          />
+          <div>
+            <label for="full-name">Github Username</label>
+            <input
+              id="github-username"
+              type="name"
+              name="github-username"
+              required
+              aria-required="true"
+              aria-invalid="false"
+              autocomplete=""
+              data-js="github-username"
+            />
+          </div>
+          <button type="submit">Generate My Ticket</button>
+        </form>
+      </section>
+      <section>
+        <p>Congrats, <span data-js="display-full-name"></span>! Your ticket is ready.</p>
+        <p>
+          We've emailed your ticket to <span data-js="display-email-address"></span> and
+          will send updates in the run up to the event.
+        </p>
+        <div>
+          <ul>
+            <li>Coding Conf</li>
+            <li>Jan 31, 2025 / Austin, TX</li>
+            <li data-js="display-full-name"></li>
+            <li data-js="display-github-username"></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
